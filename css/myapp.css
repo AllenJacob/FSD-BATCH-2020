@@ -1,0 +1,37 @@
+.header1 {
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 80px;   */
+    align-items: center;
+    padding-top: 80px; 
+    font-size: 18px;   
+}
+.header2 a{
+    margin-left: 15px;
+}
+header{
+    background-color: dodgerblue;
+    color: white;
+    align-items: center;
+    height: 60vh;
+}
+.header3 {
+    font-size: 24px;
+    padding-top: 40px;
+}
+.header4{
+    font-size: 30px;
+
+}
+.header5{
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+    text-decoration-line: underline;
+    font-size: 20px;    
+}
+.header6{
+    display: flex;
+    flex-direction: column;
+    border-top-style: solid;     
+}
