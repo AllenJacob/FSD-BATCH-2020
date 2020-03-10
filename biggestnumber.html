@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row">
+        <div class="col">
+            <table class="table">
+                <tr>
+                    <td>Enter 1st number</td>
+                    <td><input type="text" class="form-control" id="num1"></td>
+                </tr>
+                <tr>
+                    <td>Enter 2nd number</td>
+                    <td><input type="text" class="form-control" id="num2"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="button" class="btn btn-danger" onclick="biggestnumber();">CHECK</button></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><p id="biggest"></p></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        function biggestnumber()
+        {
+            var x=parseInt(document.getElementById("num1").value);
+            var y=parseInt(document.getElementById("num2").value);
+
+            if(x>y)
+            {
+                document.getElementById("biggest").innerHTML="x is bigger";
+
+            }
+            else if(y>x)
+            {
+                document.getElementById("biggest").innerHTML="y is bigger"
+            }
+            else{
+                document.getElementById("biggest").innerHTML="numbers are equal"
+            }
+            
+        }
+    </script>
+</body>
+</html>
