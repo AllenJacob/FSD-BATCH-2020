@@ -11,23 +11,43 @@
     <div class="container">
         <div class="row">
             <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <form>
                 <table class="table">
                     <tr>
                         <td>Number1</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control" id="num1"></td>
                     </tr>
                     <tr>
                         <td>Number2</td>
-                        <td><input type="text" class="form-control"></td>
+                        <td><input type="text" class="form-control" id="num2"></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td><button class="btn btn-success">ADD</button></td>
+                        <td><button type="button" class="btn btn-success" onclick="addnumbers();">ADD</button></td><!--function called-->
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <p id="result"></p>
+                        </td>
                     </tr>
                 </table>
+            </form>
             </div>
         </div>
     </div>
+    <script>
+        
+        function addnumbers()
+        {
+            var x=parseInt(document.getElementById("num1").value);
+            var y=parseInt(document.getElementById("num2").value);
+            var z=x+y;
+            console.log(z);
+            document.getElementById("result").innerHTML=z;
+            
+        }
+    </script>
     
 </body>
 </html>
