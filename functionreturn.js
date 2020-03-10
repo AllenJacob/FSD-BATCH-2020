@@ -1,9 +1,30 @@
-function add(a,b)
+function reverse(x,rev,rem)
 {
-    var c=a+b;
-    return c;
+    while(x>0)
+    {
+        rem=x%10;
+        rev=rev*10+rem;
+        x=parseInt(x/10);
+        
+    }
+    return rev;
+    
+    
 }
-var x=10;
-var y=67;
-var z=add(x,y);
-console.log("Resulr is: "+z);
+var a=103;
+var revv=0;
+var remm=0;
+var z=reverse(a,revv,remm);
+console.log(z);
+function pallincheck(z,a)
+{
+    if(z==a)
+    {
+        console.log("it is palindrome");
+    }
+    else
+    {
+        console.log("not a palindrome");
+    }
+}
+pallincheck(z,a);
