@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <tr>
+                        <td>Enter a number</td>
+                        <td><input type="text" class="form-control" id="number"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="button" class="btn btn-info" onclick="oddoreven();">CHECK</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><p id="result"></p></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        function oddoreven()
+        {
+            var x=parseInt(document.getElementById("number").value);
+                      
+                 if(x%2==0)
+                  {
+                    document.getElementById("result").innerHTML="number is even";
+                  }   
+                  else{
+                    document.getElementById("result").innerHTML="number is odd";
+
+                  }
+                  
+                 
+                  
+
+        }
+    </script>
+</body>
+</html>
